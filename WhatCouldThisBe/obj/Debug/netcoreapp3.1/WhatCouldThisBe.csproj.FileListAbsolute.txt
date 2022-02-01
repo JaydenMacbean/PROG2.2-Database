@@ -1,0 +1,13 @@
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\bin\Debug\netcoreapp3.1\WhatCouldThisBe.exe
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\bin\Debug\netcoreapp3.1\WhatCouldThisBe.deps.json
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\bin\Debug\netcoreapp3.1\WhatCouldThisBe.runtimeconfig.json
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\bin\Debug\netcoreapp3.1\WhatCouldThisBe.runtimeconfig.dev.json
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\bin\Debug\netcoreapp3.1\WhatCouldThisBe.dll
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\bin\Debug\netcoreapp3.1\WhatCouldThisBe.pdb
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\obj\Debug\netcoreapp3.1\WhatCouldThisBe.csprojAssemblyReference.cache
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\obj\Debug\netcoreapp3.1\WhatCouldThisBe.AssemblyInfoInputs.cache
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\obj\Debug\netcoreapp3.1\WhatCouldThisBe.AssemblyInfo.cs
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\obj\Debug\netcoreapp3.1\WhatCouldThisBe.csproj.CoreCompileInputs.cache
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\obj\Debug\netcoreapp3.1\WhatCouldThisBe.dll
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\obj\Debug\netcoreapp3.1\WhatCouldThisBe.pdb
+C:\Users\macbe\Desktop\Bewijzenmap\Leerjaar2\Periode2.2\PROG\WhatCouldThisBe\WhatCouldThisBe\obj\Debug\netcoreapp3.1\WhatCouldThisBe.genruntimeconfig.cache
