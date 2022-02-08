@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\macbe\\Desktop\\Bewijzenmap\\Leerjaar2\\Periode2.2\\PROG\\WhatCouldThisBe\\WhatCouldThisBe\\WhatCouldThisBe.csproj": {}
+    "C:\\Users\\macbe\\Desktop\\Bewijzenmap\\Leerjaar2\\Periode2.2\\PROG\\PROG2.2-Database\\WhatCouldThisBe\\WhatCouldThisBe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\macbe\\Desktop\\Bewijzenmap\\Leerjaar2\\Periode2.2\\PROG\\WhatCouldThisBe\\WhatCouldThisBe\\WhatCouldThisBe.csproj": {
+    "C:\\Users\\macbe\\Desktop\\Bewijzenmap\\Leerjaar2\\Periode2.2\\PROG\\PROG2.2-Database\\WhatCouldThisBe\\WhatCouldThisBe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\macbe\\Desktop\\Bewijzenmap\\Leerjaar2\\Periode2.2\\PROG\\WhatCouldThisBe\\WhatCouldThisBe\\WhatCouldThisBe.csproj",
+        "projectUniqueName": "C:\\Users\\macbe\\Desktop\\Bewijzenmap\\Leerjaar2\\Periode2.2\\PROG\\PROG2.2-Database\\WhatCouldThisBe\\WhatCouldThisBe.csproj",
         "projectName": "WhatCouldThisBe",
-        "projectPath": "C:\\Users\\macbe\\Desktop\\Bewijzenmap\\Leerjaar2\\Periode2.2\\PROG\\WhatCouldThisBe\\WhatCouldThisBe\\WhatCouldThisBe.csproj",
+        "projectPath": "C:\\Users\\macbe\\Desktop\\Bewijzenmap\\Leerjaar2\\Periode2.2\\PROG\\PROG2.2-Database\\WhatCouldThisBe\\WhatCouldThisBe.csproj",
         "packagesPath": "C:\\Users\\macbe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\macbe\\Desktop\\Bewijzenmap\\Leerjaar2\\Periode2.2\\PROG\\WhatCouldThisBe\\WhatCouldThisBe\\obj\\",
+        "outputPath": "C:\\Users\\macbe\\Desktop\\Bewijzenmap\\Leerjaar2\\Periode2.2\\PROG\\PROG2.2-Database\\WhatCouldThisBe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

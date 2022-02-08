@@ -16,26 +16,66 @@ namespace WhatCouldThisBe
             Console.WriteLine("Here you can either buy items or participate in the item roulette form free!");
             Console.WriteLine("Write either BUY or ROULETTE or CHECK INVENTORY or LEAVE\n");
             answer1 = Console.ReadLine();
-
-            if(answer1.ToLower() == "buy" || answer1.ToLower() == "buy ")
+            
+            try
             {
-                Buy();
+
             }
 
-            if (answer1.ToLower() == "roulette" || answer1.ToLower() == "roulette ")
+            catch(Exception)
             {
-                Roulette();
+                Console.WriteLine("This isn't one of the options, try again.\n");
+                switch (answer1.ToUpper())
+                {
+
+                    case "BUY":
+
+                        Buy();
+                        break;
+
+                    case "ROULETTE":
+
+                        Roulette();
+                        break;
+
+                    case "CHECK INVENTORY":
+
+                        CheckInFaustory();
+                        break;
+
+                    case "LEAVE":
+
+                        Console.Clear();
+                        break;
+
+                }
+            }
+            switch(answer1.ToUpper())
+            {
+
+                case "BUY":
+
+                    Buy();
+                    break;
+
+                case "ROULETTE":
+
+                    Roulette();
+                    break;
+
+                case "CHECK INVENTORY":
+
+                    CheckInFaustory();
+                    break;
+
+                case "LEAVE":
+
+                    Console.Clear();
+                    break;
+                
             }
 
-            if (answer1.ToLower() == "check inventory" || answer1.ToLower() == "check inventory ")
-            {
-                CheckInFaustory();
-            }
-
-            if (answer1.ToLower() == "leave" || answer1.ToLower() == "leave ")
-            {
-                Console.Clear();
-            }
+           
 
 
 
@@ -43,14 +83,14 @@ namespace WhatCouldThisBe
 
         }
 
-        public void Buy()
+        public void Buy() 
         {
             Console.WriteLine("Here's our current selection of items:\n - BOMB \n - POISON \n - DONUT");
             Console.WriteLine("Type out the item name to buy it."); 
             Console.WriteLine("You can also check your current amount of money by typing MONEY or head back to start through typing BACK.\n");
             answer1 = Console.ReadLine();
 
-            switch(answer1)
+            switch(answer1.ToUpper())
             {
                 case "BOMB":
 
