@@ -160,7 +160,74 @@ namespace WhatCouldThisBe
 
         public void Roulette()
         {
+            Console.WriteLine("Revealing your item in 3...\n2...\n1...");
+            Random randomID = new Random();
+            int randItem = randomID.Next(0, 3);
 
+            switch(randItem)
+            {
+                case 0:
+
+                    Bomb aBomb = new Bomb("Bomb", 0);
+                    inFaustory.AddItems(aBomb);
+                    bombsInPossession++;
+                    Console.WriteLine("You got a bomb!");
+                    Console.WriteLine("Would you like to spin again?");
+                    answer1 = Console.ReadLine();
+                    if (answer1.ToLower() == "y")
+                    {
+                        Roulette();
+                    }
+
+                    else
+                    {
+                        Start();
+                    }
+                    break;
+                    
+
+                case 1:
+
+                    Poison poisonJar = new Poison("Poison", 1);
+                    inFaustory.AddItems(poisonJar);
+                    poisonJarsInPossession++;
+                    Console.WriteLine("Would you like to spin again?");
+                    answer1 = Console.ReadLine();
+                    if (answer1.ToLower() == "y")
+                    {
+                        Roulette();
+                    }
+
+                    else
+                    {
+                        Start();
+                    }
+                    break;
+
+                case 2:
+
+                    Donut aDonut = new Donut("Donut", 2);
+                    inFaustory.AddItems(aDonut);
+                    donutsInPossession++;
+                    Console.WriteLine("You got a donut!");
+                    Console.WriteLine("Would you like to spin again?");
+                    answer1 = Console.ReadLine();
+                    if (answer1.ToLower() == "y")
+                    {
+                        Roulette();
+                    }
+
+                    else
+                    {
+                        Start();
+                    }
+                    break;
+
+
+
+            }
+
+             
         }
 
         public void CheckInFaustory()
