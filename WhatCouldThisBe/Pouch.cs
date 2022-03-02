@@ -192,7 +192,8 @@ namespace WhatCouldThisBe
                     inFaustory.AddItems(aBomb);
                     bombsInPossession++;
                     Console.WriteLine("You got a bomb!");
-                    Console.WriteLine("Would you like to spin again?");
+                    Console.WriteLine("Would you like to spin again? y/n");
+                    Console.WriteLine("Type out y to spin again, or n to go back");
                     answer1 = Console.ReadLine();
                     if (answer1.ToLower() == "y")
                     {
@@ -223,7 +224,8 @@ namespace WhatCouldThisBe
                     inFaustory.AddItems(poisonJar);
                     poisonJarsInPossession++;
                     Console.WriteLine("You got a poison jar!");
-                    Console.WriteLine("Would you like to spin again?");
+                    Console.WriteLine("Would you like to spin again? y/n");
+                    Console.WriteLine("Type out y to spin again, or n to go back");
                     answer1 = Console.ReadLine();
                     if (answer1.ToLower() == "y")
                     {
@@ -254,7 +256,8 @@ namespace WhatCouldThisBe
                     inFaustory.AddItems(aDonut);
                     donutsInPossession++;
                     Console.WriteLine("You got a donut!");
-                    Console.WriteLine("Would you like to spin again?");
+                    Console.WriteLine("Would you like to spin again? y/n");
+                    Console.WriteLine("Type out y to spin again, or n to go back");
                     answer1 = Console.ReadLine();
                     if (answer1.ToLower() == "y")
                     {
