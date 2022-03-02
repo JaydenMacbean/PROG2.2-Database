@@ -9,11 +9,12 @@ namespace WhatCouldThisBe
         static int bombsInPossession = 0;
         static int poisonJarsInPossession = 0;
         static int donutsInPossession = 0;
+        static int money = 500;
         FaustItem inFaustory = new FaustItem("shop", 69);
         public void Start()
         {
             Console.WriteLine("Welcome to Faust's Item Shop! How can I help you?");
-            Console.WriteLine("Here you can either buy items or participate in the item roulette form free!");
+            Console.WriteLine("Here you can either buy items or participate in the item roulette for free!");
             Console.WriteLine("Write either BUY or ROULETTE or CHECK INVENTORY or LEAVE\n");
             answer1 = Console.ReadLine();
             
@@ -85,7 +86,8 @@ namespace WhatCouldThisBe
 
         public void Buy() 
         {
-            Console.WriteLine("Here's our current selection of items:\n - BOMB \n - POISON \n - DONUT");
+            Console.WriteLine("\nCurrent amount of money : " + money + "$");
+            Console.WriteLine("\nHere's our current selection of items:\n - BOMB : 30$\n - POISON : 25$\n - DONUT : 15$");
             Console.WriteLine("Type out the item name to buy it."); 
             Console.WriteLine("You can also check your current amount of money by typing MONEY or head back to start through typing BACK.\n");
             answer1 = Console.ReadLine();
@@ -93,59 +95,77 @@ namespace WhatCouldThisBe
             switch(answer1.ToUpper())
             {
                 case "BOMB":
-
-                    Bomb aBomb = new Bomb("Bomb", 0);
-                    inFaustory.AddItems(aBomb);
-                    bombsInPossession++;
-                    Console.WriteLine("Would you like to buy anything else? y/n");
-                    Console.WriteLine("Type out y to head back to the buying section, or n to leave\n");
-                    answer2 = Console.ReadLine();
-                    if(answer2.ToLower() == "y")
+                    if (money >= 30)
                     {
-                        Buy();
+                        Bomb aBomb = new Bomb("Bomb", 0);
+                        inFaustory.AddItems(aBomb);
+                        bombsInPossession++;
+                        money -= 30;
+                        Console.WriteLine("\nCurrent amount of money : " + money + "$");
+                        Console.WriteLine("\nWould you like to buy anything else? y/n");
+                        Console.WriteLine("Type out y to head back to the buying section, or n to leave\n");
+                        answer2 = Console.ReadLine();
+                        if (answer2.ToLower() == "y")
+                        {
+                            Buy();
+                        }
+
+                        else
+                        {
+                            Start();
+                        }
                     }
 
                     else
                     {
-                        Start();
+                        Console.WriteLine("You don't have enough money to buy this item");
+                        Buy();
                     }
                     break;
 
                 case "POISON":
-
-                    Poison poisonJar = new Poison("Poison", 1);
-                    inFaustory.AddItems(poisonJar);
-                    poisonJarsInPossession++;
-                    Console.WriteLine("Would you like to buy anything else? y/n");
-                    Console.WriteLine("Type out y to head back to the buying section, or n to leave\n");
-                    answer2 = Console.ReadLine();
-                    if (answer2.ToLower() == "y")
+                    if (money >= 25)
                     {
-                        Buy();
-                    }
+                        Poison poisonJar = new Poison("Poison", 1);
+                        inFaustory.AddItems(poisonJar);
+                        poisonJarsInPossession++;
+                        money -= 25;
+                        Console.WriteLine("\nCurrent amount of money : " + money + "$");
+                        Console.WriteLine("\nWould you like to buy anything else? y/n");
+                        Console.WriteLine("Type out y to head back to the buying section, or n to leave\n");
+                        answer2 = Console.ReadLine();
+                        if (answer2.ToLower() == "y")
+                        {
+                            Buy();
+                        }
 
-                    else
-                    {
-                        Start();
+                        else
+                        {
+                            Start();
+                        }
                     }
                     break;
 
                 case "DONUT":
-
-                    Donut aDonut = new Donut("Donut", 2);
-                    inFaustory.AddItems(aDonut);
-                    donutsInPossession++;
-                    Console.WriteLine("Would you like to buy anything else? y/n");
-                    Console.WriteLine("Type out y to head back to the buying section, or n to leave\n");
-                    answer2 = Console.ReadLine();
-                    if (answer2.ToLower() == "y")
+                    if (money >= 15)
                     {
-                        Buy();
-                    }
+                        Donut aDonut = new Donut("Donut", 2);
+                        inFaustory.AddItems(aDonut);
+                        donutsInPossession++;
+                        money -= 15;
+                        Console.WriteLine("\nCurrent amount of money : " + money + "$");
+                        Console.WriteLine("\nWould you like to buy anything else? y/n");
+                        Console.WriteLine("\nType out y to head back to the buying section, or n to leave\n");
+                        answer2 = Console.ReadLine();
+                        if (answer2.ToLower() == "y")
+                        {
+                            Buy();
+                        }
 
-                    else
-                    {
-                        Start();
+                        else
+                        {
+                            Start();
+                        }
                     }
                     break;
 
@@ -179,18 +199,30 @@ namespace WhatCouldThisBe
                         Roulette();
                     }
 
-                    else
+                    else if (answer1.ToLower() == "n")
                     {
                         Start();
                     }
+
+                    else
+                    {
+                        /*for(answer1.ToLower() != "y" || answer1.ToLower() != "n")
+                        {
+
+                        }*/
+                        Console.WriteLine("That is not one of the available options, returning to start.\n");
+                        Start();
+                        //^ Change to "That is not one of the available options, please try again" later and create a loop that repeats the question until you answer correctly
+
+                    }
                     break;
-                    
 
                 case 1:
 
                     Poison poisonJar = new Poison("Poison", 1);
                     inFaustory.AddItems(poisonJar);
                     poisonJarsInPossession++;
+                    Console.WriteLine("You got a poison jar!");
                     Console.WriteLine("Would you like to spin again?");
                     answer1 = Console.ReadLine();
                     if (answer1.ToLower() == "y")
@@ -198,9 +230,21 @@ namespace WhatCouldThisBe
                         Roulette();
                     }
 
-                    else
+                    else if (answer1.ToLower() == "n")
                     {
                         Start();
+                    }
+
+                    else
+                    {
+                        /*for(answer1.ToLower() != "y" || answer1.ToLower() != "n")
+                        {
+
+                        }*/
+                        Console.WriteLine("That is not one of the available options, returning to start.\n");
+                        Start();
+                        //^ Change to "That is not one of the available options, please try again" later and create a loop that repeats the question until you answer correctly
+
                     }
                     break;
 
@@ -217,9 +261,21 @@ namespace WhatCouldThisBe
                         Roulette();
                     }
 
-                    else
+                    else if(answer1.ToLower() == "n")
                     {
                         Start();
+                    }
+
+                    else
+                    {
+                        /*for(answer1.ToLower() != "y" || answer1.ToLower() != "n")
+                        {
+
+                        }*/
+                        Console.WriteLine("That is not one of the available options, returning to start.\n");
+                        Start();
+                        //^ Change to "That is not one of the available options, please try again" later and create a loop that repeats the question until you answer correctly
+
                     }
                     break;
 
@@ -236,7 +292,7 @@ namespace WhatCouldThisBe
             Console.WriteLine("Type out the item name to check it out.");
             answer1 = Console.ReadLine();
             
-            switch(answer1)
+            switch(answer1.ToUpper())
             {
                 case "BOMBS":
 
